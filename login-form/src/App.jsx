@@ -1,4 +1,4 @@
-import { Switch } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Login from "./components/Login";
 import Success from "./components/Success";
@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Switch>
-        <Login></Login>
-        <Success></Success>
+        <Route exact path="/" component={Login} />
+        <Route path="/success" component={Success} />
       </Switch>
     </>
   );
