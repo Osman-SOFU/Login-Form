@@ -132,7 +132,7 @@ export default function Login() {
         </Label>
       </FormGroup>
       <FormGroup className="text-center p-4">
-        <Button color="primary" disabled={!isValid}>
+        <Button color="primary" type="submit" disabled={!isValid}>
           Sign In
         </Button>
       </FormGroup>
